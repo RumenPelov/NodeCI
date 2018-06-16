@@ -1,4 +1,5 @@
 node_modules
+dev.js
 nohup.out
 .DS_Store
-dev.js
+
