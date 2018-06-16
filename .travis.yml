@@ -15,7 +15,7 @@ install:
   - npm install
   - npm run build
 before_script:
-  - sleep 15
+  - sleep 30
   - mongo blog_ci --eval 'db.createUser({user:"travis",pwd:"test",roles:["readWrite"]});'
 script:
   - nohup npm run start &
