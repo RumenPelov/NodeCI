@@ -26,7 +26,7 @@ mongoose.Query.prototype.exec =async function () {
     // See if we have a value of key in redis
     const cacheValue = await client.hget(this.hashKey, key);
 
-    // If we  do rerturn that
+    // If we  do return that
     if(cacheValue) {
        const doc = JSON.parse(cacheValue);
 
